@@ -104,6 +104,39 @@ header nav a#active {
     color: whitesmoke;
 }
 
+main {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: #efefef;
+}
+
+main .about img {
+    width: 30%;
+    max-width: 500px;
+}
+
+main .about .content {
+    padding: 0px 2%;
+}
+
+main .about .content h2 {
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+main .about .content p {
+    font-size: 18px;
+}
+
 footer {
     padding: 2% 0 0 0;
     background: lightgrey;
