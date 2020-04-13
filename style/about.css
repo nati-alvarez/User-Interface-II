@@ -166,6 +166,21 @@ footer button {
     color: whitesmoke;
 }
 
+@media screen and (max-width: 1000px) {
+    main {
+        height: auto;
+        padding: 5vh 0;
+    }
+    main .about {
+        flex-direction: column;
+        background: transparent;
+    }
+    main .about img {
+        width: 200px;
+        margin-bottom: 2vh;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     footer {
         padding: 5vh 0 2vh 0;
