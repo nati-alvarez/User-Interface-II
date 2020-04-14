@@ -104,74 +104,37 @@ header nav a#active {
     color: whitesmoke;
 }
 
-section.about {
+main {
+    height: 60vh;
     display: flex;
-    align-items: flex-end;
-    padding: 3%;
+    justify-content: center;
+    align-items: center;
 }
 
-section.about img {
-    min-width: 0;
-    min-height: 0;
-    object-fit: cover;
-    height: 400px;
-    flex: 1;
+main .about {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: #efefef;
 }
 
-section.about .introduction {
-    flex: 1;
-    padding: 0px 5%;
-    font-size: 1.2rem;
+main .about img {
+    width: 30%;
+    max-width: 500px;
 }
 
-
-section.about .introduction h2 {
-    font-size: 1.6rem;
-    margin-bottom: 4%;
-    text-transform: uppercase;
+main .about .content {
+    padding: 0px 2%;
 }
 
-section.about .introduction button {
-    padding: 2%;
-    background: #c72400;
-    border: none;
-    color: whitesmoke;
+main .about .content h2 {
+    font-size: 30px;
     margin-bottom: 2%;
 }
 
-section.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-section.projects .project {
-    padding: 1% 2%;
-    width: 25%;
-    min-width: 300px;   
-    margin: 2% 0px;
-}
-
-section.projects .project h3 {
-    font-size: 1.4em;
-}
-
-section.projects .project .img-container {
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 3%;
-}
-
-section.projects .project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform ease-out 400ms;
-}
-
-section.projects .project img:hover {
-    transform: scale(1.3);
+main .about .content p {
+    font-size: 18px;
 }
 
 footer {
@@ -203,26 +166,22 @@ footer button {
     color: whitesmoke;
 }
 
-
-@media only screen and (max-width: 900px) {
-    section.about {
-        flex-direction: column;
+@media screen and (max-width: 1000px) {
+    main {
+        height: auto;
+        padding: 5vh 0;
     }
-
-    section.about img {
-        flex: 0;
-        height: 20vh;
-        width: 100%;
-        margin-bottom: 5%;
+    main .about {
+        flex-direction: column;
+        background: transparent;
+    }
+    main .about img {
+        width: 200px;
+        margin-bottom: 2vh;
     }
 }
 
 @media only screen and (max-width: 700px) {
-
-    section.projects {
-        padding: 5vh 0;
-    }
-
     footer {
         padding: 5vh 0 2vh 0;
     }
