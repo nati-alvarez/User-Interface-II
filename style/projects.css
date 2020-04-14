@@ -1,0 +1,151 @@
+/* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    background: #c72400;
+    padding: 20px;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 2.4rem;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+header nav {
+    padding: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    /* background: whitesmoke; */
+    color: #4f4f4f;
+    padding: 10px;
+    display: inline-block;
+    background: linear-gradient(to right, grey 50%, whitesmoke 50%);
+    background-size: 205% 100%;
+    background-position: right bottom;
+    transition:  all ease-out 200ms;
+}
+
+header nav a:hover {
+    background-position: left bottom;
+    color: whitesmoke;
+}
+
+header nav a#active {
+    background: #3f3f3f;
+    color: whitesmoke;
+}
+
+
+footer {
+    padding: 2% 0 0 0;
+    background: lightgrey;
+    text-align: center;
+}
+
+footer .social {
+    padding: 4% 0 1% 0;
+    font-size: 2rem;
+}
+
+footer .social a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+footer h4 {
+    margin-bottom: 2%;
+    font-size: 1.4em;
+}
+
+footer button {
+    padding: 1% 5%;
+    background: #c72400;
+    border: none;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        padding: 5vh 0 2vh 0;
+    }
+
+    footer .social {
+        padding-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header nav a {
+        margin-bottom: 10px;
+    }
+}
