@@ -104,6 +104,46 @@ header nav a#active {
     color: whitesmoke;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h2 {
+    padding: 5vh 0;
+    font-size: 30px;
+}
+
+main .projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .projects .project {
+    width: 21%;
+    min-width: 250px;
+    margin: 5vh 2%;
+}
+
+main .projects .project img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .projects .project h3 {
+    font-size: 26px;
+    margin: 5vh 0 2vh 0;
+}
+
+main .projects .project .links {
+    margin-top: 2vh;
+}
+
+main .projects .project .links a {
+    margin: 0 50px 0 0;
+    color: #c72400;
+}
 
 footer {
     padding: 2% 0 0 0;
