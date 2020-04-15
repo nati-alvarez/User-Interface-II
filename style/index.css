@@ -203,7 +203,28 @@ footer button {
     color: whitesmoke;
 }
 
+/* Responsive design project styles */
+@media (max-width: 800px){
+    section.about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    section.about img {
+        flex: auto;
+        height: 60vh !important;
+        width: 100%;
+        padding: 0 5%;
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+/* 
 @media only screen and (max-width: 900px) {
     section.about {
         flex-direction: column;
@@ -236,4 +257,4 @@ footer button {
     header nav a {
         margin-bottom: 10px;
     }
-}
+} */
