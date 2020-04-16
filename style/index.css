@@ -233,6 +233,10 @@ footer button {
     section.about img {
         height: 40vh;
     }
+
+    section.projects .project .img-container {
+        height: 40vh;
+    }
 }
 
 /* 
